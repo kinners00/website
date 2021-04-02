@@ -1,0 +1,276 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 1.5;
+    background: url("http://karenmenezes.com/shapes-polygon/bg-cubes.png");
+    background-image: url('water.jpg');
+  }
+  
+  p {
+    margin: 0 0 10px 0;
+  }
+  
+  .wrap {
+    color: #222;
+    font-size: 24px;
+  }
+  
+  .clip-svg {
+    width: 0;
+    height: 0;
+  }
+  
+  .clip-caption {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+  }
+  
+  .clip-each {
+    display: block;
+    position: relative;
+    -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    -webkit-clip-path: url("#hexagon-clip");
+    clip-path: url("#hexagon-clip");
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    margin: 0 auto;
+  }
+  
+  
+  .clip-solid {
+    width: 300px;
+    height: 300px;
+    background-image: url("http://karenmenezes.com/shapes-polygon/clip-demo-img.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #ad6996;
+    background-blend-mode: hard-light;
+    -webkit-transition: all 2.5s linear;
+    transition: all 2.5s linear;
+  }
+  
+  .clip-solid:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-clip-path: polygon(100% 3%, 17% 100%, 100% 100%);
+    clip-path: polygon(100% 3%, 17% 100%, 100% 100%);
+    -webkit-clip-path: url("#retangle-clip");
+    clip-path: url("#retangle-clip");
+    background: #9E566E;
+    z-index: 1;
+    width: 100%;
+    height: 70px;
+    -webkit-transition: all 2s linear;
+    transition: all 2s linear;
+    pointer-events: none;
+  }
+  
+  
+  .clip-solid:hover .social-share-block {
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+  
+  .social-share-block {
+    position: absolute;
+    bottom: 10px;
+    right: 55px;
+    color: #fff;
+    font-size: 70%;
+    z-index: 2;
+  }
+  
+  .social-each {
+    font-size: 80%;
+  }
+  
+  .clip-gradient {
+    background: #222;
+    width: 160px;
+    height: 160px;
+  }
+  
+  .clip-gradient .clip-caption {
+    color: #fff;
+  }
+  
+  .clip-border {
+    background: -webkit-linear-gradient(300deg, #aebcbf 0%, #6e7774 50%, #333 61%, #333 100%);  
+    background: linear-gradient(150deg, #aebcbf 0%,#6e7774 50%,#333 61%,#333 100%);
+    width: 160px;
+    height: 160px;
+    margin-top: 7px;
+    color: #222;
+  }
+  
+  .clip-border::after {
+    content: "";
+    position: absolute;
+    top: 4%;
+    left: 4%;
+    right: 4%;
+    bottom: 4%;
+    margin: 0 auto;
+    background: url("http://karenmenezes.com/shapes-polygon/bg-cubes.png");
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    -webkit-clip-path: url("#hexagon-clip");
+    clip-path: url("#hexagon-clip");
+    z-index: -1;
+  }
+  
+  .clip-tagline {
+    display: block;
+    color: #758C9B;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  @media only screen and (min-width: 550px) {
+    .wrap {
+      display: table;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translateY(-50%) translateX(-50%);
+      -webkit-transform: translateY(-50%) translateX(-50%);
+      transform: translateY(-50%) translateX(-50%);
+    }
+  
+    .clip-block {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  
+    .clip-border {
+      margin-top: 20px;
+    }
+  }
+
+
+  .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+.fa-android {
+  background: #a4c639;
+  color: white;
+}
+
+.fa-dribbble {
+  background: #ea4c89;
+  color: white;
+}
+
+.fa-vimeo {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-tumblr {
+  background: #2c4762;
+  color: white;
+}
+
+.fa-vine {
+  background: #00b489;
+  color: white;
+}
+
+.fa-foursquare {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-stumbleupon {
+  background: #eb4924;
+  color: white;
+}
+
+.fa-flickr {
+  background: #f40083;
+  color: white;
+}
+
+.fa-yahoo {
+  background: #430297;
+  color: white;
+}
+
+.fa-soundcloud {
+  background: #ff5500;
+  color: white;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color: white;
+}
