@@ -1,8 +1,9 @@
 body {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: "Helvetica";
     line-height: 1.5;
     background: url("http://karenmenezes.com/shapes-polygon/bg-cubes.png");
-    background-image: url('water.jpg');
+    background-image: url('space.jpg');
+    background-size: 100%;
   }
   
   p {
@@ -43,15 +44,15 @@ body {
   
   
   .clip-solid {
-    width: 300px;
-    height: 300px;
-    background-image: url("http://karenmenezes.com/shapes-polygon/clip-demo-img.jpg");
+    width: 280px;
+    height: 280px;
+    background-image: url('me.jpg');
     background-repeat: no-repeat;
+    margin-top: 50px;
     background-size: contain;
-    background-color: #ad6996;
     background-blend-mode: hard-light;
-    -webkit-transition: all 2.5s linear;
-    transition: all 2.5s linear;
+    -webkit-transition: all 1.5s linear;
+    transition: all 1.5s linear;
   }
   
   .clip-solid:after {
@@ -64,12 +65,12 @@ body {
     clip-path: polygon(100% 3%, 17% 100%, 100% 100%);
     -webkit-clip-path: url("#retangle-clip");
     clip-path: url("#retangle-clip");
-    background: #9E566E;
+    background: #407b68;
     z-index: 1;
     width: 100%;
     height: 70px;
-    -webkit-transition: all 2s linear;
-    transition: all 2s linear;
+    -webkit-transition: all 1.5s linear;
+    transition: all 1.5s linear;
     pointer-events: none;
   }
   
@@ -93,9 +94,12 @@ body {
   }
   
   .clip-gradient {
-    background: #222;
+    background: #2F4F4F;
+    margin-top: 50px;
     width: 160px;
     height: 160px;
+    -webkit-transition: all 1.5s linear;
+    transition: all 1.5s linear;
   }
   
   .clip-gradient .clip-caption {
@@ -103,8 +107,7 @@ body {
   }
   
   .clip-border {
-    background: -webkit-linear-gradient(300deg, #aebcbf 0%, #6e7774 50%, #333 61%, #333 100%);  
-    background: linear-gradient(150deg, #aebcbf 0%,#6e7774 50%,#333 61%,#333 100%);
+    background: #008080;
     width: 160px;
     height: 160px;
     margin-top: 7px;
@@ -177,6 +180,10 @@ body {
 }
 
 .fa-twitter {
+  color: white;
+}
+
+.fa-github {
   color: white;
 }
 
@@ -273,4 +280,11 @@ body {
 .fa-rss {
   background: #ff6600;
   color: white;
+}
+
+
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
 }
