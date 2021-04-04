@@ -34,18 +34,54 @@ body {
   padding-left: 20px;
 }
 
-/* Fake image */
-.fakeimg {
+.imgportraitbloglist {
   background-color: #aaa;
-  width: 100%;
+  height: 300px;
+  width: 250px;
+  margin-bottom: 10px;
+}
+
+/* Fake image */
+.imgportrait {
+  background-color: #aaa;
+  height: 700px;
+  width: 550px;
+}
+
+.imglandscape {
+  background-color: #aaa;
+  height: 400px;
+  width: 700px;
+}
+
+.imgsecondary {
+  background-color: #aaa;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: white;
   padding: 20px;
+  margin-top: 20px;
 }
 
 /* Add a card effect for articles */
-.card {
+.card.blog-list {
    background-color: white;
    padding: 20px;
    margin-top: 20px;
+   height: auto;
+}
+
+.description {
+  background-color: white;
+  margin-top: auto;
+}
+
+.card.blog-post {
+  background-color: white;
+  height: auto;
 }
 
 /* Clear floats after the columns */
