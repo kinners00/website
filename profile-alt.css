@@ -7,10 +7,30 @@
 body {
   font-family: Arial;
   margin: 0;
-  background: #8360c3;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #44A08D;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #093637, #44A08D);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #093637, #44A08D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 max-height: 1600px;
+}
+
+p.main {
+  font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-size: .975rem;
+  line-height: 1.5rem;
+  letter-spacing: .025rem;
+  margin: 0;
+  padding: 0;
+  color: #657786;
+}
+
+img {
+  border-radius: 100%;
+  width: 246px;
+  height: 240px;
+  object-fit: cover;
+  align-items: center;
+  padding-right: 35px;
 }
 
 /* Header/Blog Title */
@@ -51,7 +71,6 @@ h5 {
 .leftcolumn {   
   float: left;
   width: 75%;
-
 }
 
 /* Right column */
@@ -92,12 +111,13 @@ h5.tags {
 .card {
   max-width: 85%;
   padding-top: 80px;
-  padding-left: 74px;
+  padding-left: 100px;
 }
 
 .cardcategory {
-  max-width: 100%;
+  max-width: 324px;
   padding-top: 80px;
+  padding-left: 65px;
 }
 
 .cardend {
@@ -168,21 +188,17 @@ ul.categories li.current {
   margin-top: 20px;
 }
 
-/* Footer */
-.footerlarge {
-  padding: 52px;
-  background: #fff;
-  margin-top: 20px;
-}
-
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1030px) {
   .leftcolumn, .rightcolumn {   
     width: 100%;
     padding: 0;
   }
   h2.blogtitle a.blogtitle {   
     font-size: 1.7rem;
+  }
+  .card {
+    padding-left: 75px;
   }
 }
 
@@ -221,6 +237,21 @@ h5.category {
 
 h5.category a {
   color: #aab8c2;
+}
+
+h2.blogtitle {
+  width: 85%;
+  text-decoration: none;
+  color: black;
+  font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 2.25rem;
+  letter-spacing: -.025rem;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+  word-break: break-word;
 }
 
 a.blogtitle {
