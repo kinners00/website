@@ -82,6 +82,7 @@ h5.tags {
   background-color: white;
   padding: 20px;
   margin-top: 20px;
+  height: auto;
 }
 
 /* Add a card effect for articles */
@@ -151,6 +152,19 @@ ol.navlink {
   margin-left: -35px;
 }
 
+ol.tags {
+  margin-top: 3px;
+  margin-left: -40px;
+}
+
+ol.tags li {
+  list-style: none;
+  display: inline-block;
+}
+
+ol.tags li.first {
+  margin-right: 1px;
+}
 
 ol.navlink li {
   list-style: none;
@@ -173,10 +187,20 @@ a.button {
   text-decoration: none;
   font-size: 11px;
   color: #fff;
-  border-radius: 2px;
-  padding: 3px;
-  background-color: rgb(53, 53, 53);
+  border-radius: 3px;
+  padding: 5px;
+  background-color: rgb(129, 85, 85);
+}
 
+h5.button {
+  text-decoration: none;
+  font-size: 11px;
+  color: #fff;
+  border-radius: 3px;
+  padding: 3px;
+  padding-right: 5px;
+  padding-left: 5px;
+  background-color: rgb(129, 85, 85);
 }
 
 ul.arrows {
