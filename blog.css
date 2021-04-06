@@ -53,7 +53,10 @@ h5 {
   background-color: #aaa;
   height: 300px;
   width: 250px;
-  margin-top: 20px
+}
+
+h5.tags {
+  margin-bottom: 20px;
 }
 
 /* Fake image */
@@ -124,59 +127,107 @@ h5 {
   }
 }
 
+a {
+  text-decoration: none;
+  color: #e0a80d
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+ul.categories {
+  list-style: none;
+  margin-left: -38px;
+}
+
+ol.navlink {
+  margin-top: -5px;
+  margin-bottom: -5px;
+  margin-left: -35px;
+}
+
+
+ol.navlink li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+ol.navlink li::after {
+  margin-left: 0.5em;
+  content: "\00BB";
+  color: #f1f1f1
+  
+}
+
+ol.navlink li.last::after {
+  content: "";
+}
+
 a.button {
   text-decoration: none;
+  font-size: 11px;
   color: #fff;
   border-radius: 2px;
   padding: 3px;
-  background-color: rgb(38, 194, 121);
+  background-color: rgb(53, 53, 53);
 
 }
 
-body {
-  background: rgb(17,123,189);
+ul.arrows {
+  margin-top: 35px;
+  margin-left: -40px;
+  text-align: left;
+  list-style: none;
+}
+ul.arrows + ul.arrows {
+  margin-top: -1em;
+}
+ul.arrows li.arrows {
+  display: inline-block;
 }
 
-button {
-  -webkit-appearance: none;
-  background: transparent;
-  border: 0;
-  outline:0;
-}
-
-svg {
-  padding: 5px;
-}
-
+/* arrow common style */
 .arrow {
-  cursor: pointer;
-  margin-left: -10px;
-  width: 70px;
-  height: 90px;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
 }
 
-
-
-.left:hover polyline,
-.left:focus polyline {
-  stroke-width: 3;
+.arrow-top {
+  transform: rotate(-45deg);
 }
-
-.left:active polyline {
-  stroke-width: 6;
-  transition: all 100ms ease-in-out;
+.arrow-right {
+  transform: rotate(45deg);
 }
-
-.right:hover polyline,
-.right:focus polyline {
-  stroke-width: 3;
+.arrow-bottom {
+  transform: rotate(135deg);
 }
-
-.right:active polyline {
-  stroke-width: 6;
-  transition: all 100ms ease-in-out;
+.arrow-left {
+  transform: rotate(-135deg);
 }
-
-polyline {
-  transition: all 250ms ease-in-out;
+.arrow-top-narrow {
+  transform: rotate(-45deg) skew(-15deg, -15deg);
+}
+.arrow-top-wide {
+  transform: rotate(-45deg) skew(7deg, 7deg);
+}
+.arrow-top-left {
+  transform: rotate(-90deg) skew(-10deg, -10deg);
+}
+.arrow-top-right {
+  transform: rotate(0) skew(-10deg, -10deg);
+}
+.arrow-bottom-left {
+  transform: rotate(180deg) skew(-10deg, -10deg);
+}
+.arrow-bottom-right {
+  transform: rotate(90deg) skew(-10deg, -10deg);
 }
