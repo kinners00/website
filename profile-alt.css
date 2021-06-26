@@ -324,7 +324,7 @@ ol.navlinkdrop li {
 ol.navlink li {
   list-style: none;
   display: inline-block;
-  margin-right: 5px;
+  margin-right: 25px;
   font-size: 16px;
 }
 
