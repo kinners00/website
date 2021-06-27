@@ -1,5 +1,5 @@
 function readingTime() {
-    const text = container.shadowRoot.querySelector("markdown-body").innerText;
+    const text = shadowRoot.querySelector("markdown-body").innerText;
     document.getElementById("time").innerText = time;
     const wpm = 225;
     const words = text.trim().split(/\s+/).length;
