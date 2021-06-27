@@ -7,8 +7,3 @@ function readingTime() {
   // document.write(text).innerText = time;
   }
   readingTime();
-
-
-  get target() {
-    return this.shadowRoot.getElementById('target');
-}
