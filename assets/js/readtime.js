@@ -1,8 +1,9 @@
 function readingTime() {
-    const text = FileReader.document("test.md").innerText;
-    const wpm = 225;
-    const words = text.trim().split(/\s+/).length;
-    const time = Math.ceil(words / wpm);
-    document.getElementById("time").innerText = time;
+    const text = document.getElementsByClassName("markdown-body").innerText;
+   // const wpm = 225;
+   // const words = text.trim().split(/\s+/).length;
+   // const time = Math.ceil(words / wpm);
+   // document.getElementById("time").innerText = time;
+   document.write(text);
   }
   readingTime();
