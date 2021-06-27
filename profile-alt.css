@@ -359,6 +359,11 @@ ol.navlink li.last::after {
   content: "";
 }
 
+ol.navlink li a {
+  font-weight: 400;
+  letter-spacing: .025rem;
+}
+
 a.button {
   text-decoration: none;
   font-size: 11px;
