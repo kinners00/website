@@ -1,5 +1,5 @@
 function readingTime() {
-    const text = document.getElementById("article").innerText;
+    const text = document.getElementById("markdown-body").innerText;
     const wpm = 225;
     const words = text.trim().split(/\s+/).length;
     const time = Math.ceil(words / wpm);
