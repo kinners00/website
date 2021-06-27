@@ -1,5 +1,5 @@
 function readingTime() {
-    const text = this.shadowRoot.getElementByClass("markdown-body").innerText;
+    const text = this.shadowRoot.getElementById("markdown-body").innerText;
     const wpm = 225;
     const words = text.trim().split(/\s+/).length;
     const time = Math.ceil(words / wpm);
@@ -7,3 +7,8 @@ function readingTime() {
   // document.write(text).innerText = time;
   }
   readingTime();
+
+
+  get target() {
+    return this.shadowRoot.getElementById('target');
+}
