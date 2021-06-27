@@ -443,6 +443,10 @@ ul.arrows li.arrows {
   transform: rotate(90deg) skew(-10deg, -10deg);
 }
 
+.dropdown {
+  position:absolute;bottom:0;  display: inline-block;
+}
+
 /* Dropdown Button */
 .dropbtn {
   color: white;
@@ -483,7 +487,7 @@ ul.arrows li.arrows {
 .dropdown-content a:hover {background-color: #ddd;}
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: inline-block;}
+.dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover  a.dropdown {color: #657786;}
