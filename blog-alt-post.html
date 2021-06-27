@@ -3,6 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="blog alt.css" />
+<script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
 </head>
 <body>
     
@@ -11,18 +12,18 @@
 
     <div class="navbar">
       <ol class="navlink">
-        <li><b><a href="profile-alt.html">profile</a></b></li>
-         <li><b><a href="projects-alt.html">projects</a></b></li>
+        <li><a href="profile-alt.html">profile</a></li>
+         <li><a href="projects-alt.html">projects</a></li>
          <div class="dropdown">
-          <li ><b><a class=dropdown href="blog alt.html">blog</a></b></button></li>
+          <li ><a class=dropdown href="blog alt.html">blog</a></button></li>
           <div class="dropdown-content">
-            <a href="blog alt.html">All</a>
+            <a href="blog alt.html">Latest Posts</a>
             <a href="blog-alt-personal.html">Personal</a>
             <a href="blog-alt-work.html">Work</a>
           </div>
         </div>
          </ol>
-          </div> 
+          </div>
 </div>
 </div>
 
@@ -43,10 +44,19 @@
         <h5 class=category><a href="cat-personal.html">Personal</a></h5>
         <h2 class="blogtitle">Evolution of the Belfast to Paris Bike</h2>
         <h5 class="date">Wednesday, December 7, 2017</h5>
+        <p><span id="time"></span> minute read</p>
+        <article id="article">
+          <zero-md src="test.md">
+          </zero-md>
+          <!-- repeat <p> tag several times here -->
+        </article>
+  <!-- JS -->
+  <script src="assets/js/readtime.js"></script>
         <div class="cardend">
       </div>
     </div>
       </div>
+
 
       <div class="footer">
       </div>
