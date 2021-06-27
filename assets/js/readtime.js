@@ -4,6 +4,6 @@ function readingTime() {
    // const words = text.trim().split(/\s+/).length;
    // const time = Math.ceil(words / wpm);
    // document.getElementById("time").innerText = time;
-   document.write(text);
+   document.write(text) = time;
   }
   readingTime();
