@@ -74,8 +74,8 @@ h5 {
 /* Create two unequal columns that floats next to each other */
 /* Left column */
 .leftcolumn {   
-  float: left;
   width: 75%;
+  padding-left: 400px;
 }
 
 /* Right column */
@@ -115,8 +115,7 @@ h5.tags {
 
 .card {
   max-width: 85%;
-  padding-top: 80px;
-  padding-left: 100px;
+  padding-top: 50px;
 }
 
 .cardcategory {
@@ -126,7 +125,7 @@ h5.tags {
 }
 
 .cardend {
-  margin-top: 60px;
+  margin-top: 20px;
   max-width: 850px;
   margin-bottom: 0px;
   border-bottom: 1px solid #aab8c2;
@@ -148,7 +147,6 @@ ol.navlink li.end {
 }
 
 .main {
-  margin-top: 50px;
   height: 27em;
   position:relative;
   background-color: white;
@@ -208,6 +206,7 @@ ul.categories li.current {
     font-size: 1.7rem;
   }
   .card {
+    padding-top: 360px;
     padding-left: 75px;
   }
 }
@@ -234,6 +233,11 @@ a:active {
   text-decoration: underline;
 }
 
+.social a i {
+  margin-top: 20px;
+  margin-right: 20px;
+  color:black
+}
 
 h5.date {
   color: #aab8c2;

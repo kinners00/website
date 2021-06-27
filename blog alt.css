@@ -27,6 +27,17 @@ body {
   background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+/* Header/Blog Title */
+.header.blogpost {
+  width: 100%;
+  height: 4rem;
+  text-align: left;
+  position:relative;
+  background: #8360c3;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 h1.headline {
   font-size: 3em;
   height:80px;position:absolute;bottom:0;left:72px;
@@ -187,8 +198,15 @@ ul.categories li.current {
     width: 100%;
     padding: 0;
   }
-  h2.blogtitle a.blogtitle {   
+
+  .cardpost h2.blogtitle {   
     font-size: 1.7rem;
+    line-height: 1.7rem;
+  }
+
+  .cardpost a.blogtitle {   
+    font-size: 1.7rem;
+    line-height: 1.7rem;
   }
 }
 
@@ -230,7 +248,7 @@ h5.category a {
 a.blogtitle {
   width: 85%;
   text-decoration: none;
-  color: #ffae1a;;
+  color: #ffae1a;
   font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-size: 2.25rem;
@@ -239,8 +257,24 @@ a.blogtitle {
   margin: 0;
   padding: 0;
   word-break: break-word;
-  padding-top: 20px;
+  padding-top: 5px;
 }
+
+h2.blogtitle {
+  width: 85%;
+  text-decoration: none;
+  color: #14171a;
+  font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3rem;
+  letter-spacing: -.025rem;
+  margin: 0;
+  padding: 0;
+  word-break: break-word;
+  padding-top: 5px;
+}
+
 
 a.blogtitle:hover {
   text-decoration: none;
