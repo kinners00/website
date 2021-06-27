@@ -305,6 +305,12 @@ a.blogtitle:hover {
   color: #657786;
 }
 
+ol.navlink li a:hover {
+  color: #657786;
+  opacity: 0.8;
+  text-decoration: none;
+  }
+
 a.blogtitle:active {
   text-decoration: underline;
 }
@@ -480,7 +486,7 @@ ul.arrows li.arrows {
 .dropdown:hover .dropdown-content {display: inline-block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover  a.dropdown {color: rgb(228, 228, 228);}
+.dropdown:hover  a.dropdown {color: #657786;}
 
 h4 {
   color: white;
