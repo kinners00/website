@@ -1,9 +1,11 @@
-function readingTime() {
-    const text = this.shadowRoot.getElementbyId("markdown-body").innerText;
-    const wpm = 225;
-    const words = text.trim().split(/\s+/).length;
-    const time = Math.ceil(words / wpm);
-    document.getElementById("time").innerText = time;
-  // document.write(text).innerText = time;
-  }
-  readingTime();
+ result = document.getElementsByClassName("markdown-body")
+      const wordsPerMinute = 200; // Average case.
+      let result;
+      
+      let textLength = ev.value.split(" ").length; // Split by words
+      if(textLength > 0){
+        let value = Math.ceil(textLength / wordsPerMinute);
+        result = `~${value} min read`;
+      }
+      document.getElementById("readingTime").innerText = result;
+
