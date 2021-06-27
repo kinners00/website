@@ -1,5 +1,6 @@
-$.get("test.md", function(response) {
-  var test = response;
+var test;
+$.get('test.md', function (response) {
+    test = response;
 
   const wordsPerMinute = 200; // Average case.
   let result;
