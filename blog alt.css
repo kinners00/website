@@ -506,7 +506,10 @@ h4 {
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
-
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
 
   .leftcolumnproj {
     padding-left: 50px;
@@ -529,7 +532,6 @@ h4 {
   }
 
   .card {
-    max-width: 30%;
     padding-top: 80px;
     padding-left: 50px;
   }
