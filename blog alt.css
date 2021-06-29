@@ -19,27 +19,22 @@ body {
 /* Header/Blog Title */
 .header {
   width: 100%;
-  height: 16rem;
+  height: 23rem;
   text-align: left;
   position:relative;
-  background: #8360c3;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #606ac3;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2ebf91, #606ac3);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2ebf91, #606ac3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /* Header/Blog Title */
-.header.blogpost {
-  width: 100%;
+.header.post {
   height: 4rem;
-  text-align: left;
-  position:relative;
-  background: #8360c3;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 h1.headline {
-  font-size: 3em;
+  letter-spacing: -.025rem;
+  font-size: 2.8em;
   position:absolute;bottom:0;left:67px;
   color: white;
 }
@@ -81,6 +76,14 @@ h5 {
   padding-left: 70px;
 }
 
+.leftcolumnprof {
+  float: left;
+  width: 580px;
+  padding-left: 67px;
+  padding-top: 10px;
+  padding-right: 100px;
+}
+
 /* Right column */
 .rightcolumnproj {
   float: left;
@@ -116,6 +119,20 @@ h5.tags {
   margin-top: 20px;
 }
 
+img.profile {
+  border-radius: 50%;
+  width: 206px;
+  height: 200px;
+  object-fit: cover;
+  align-items: center;
+}
+
+.profilephoto {
+margin-top: 50px;
+}
+
+
+
 .card {
   max-width: 88%;
   padding-top: 80px;
@@ -127,8 +144,14 @@ h5.tags {
   padding-top: 80px;
 }
 
+.cardendprof {
+  max-width: 850px;
+  margin-bottom: 0px;
+  border-bottom: 1px solid #aab8c2;
+}
+
 .cardend {
-  margin-top: 60px;
+  margin-top: 40px;
   max-width: 850px;
   margin-bottom: 0px;
   border-bottom: 1px solid #aab8c2;
@@ -177,7 +200,7 @@ ol.navlink li a{
 }
 
 ol.navlink li a:hover {
-color: #657786;
+color: #272d31;
 opacity: 0.8;
 text-decoration: none;
 }
@@ -228,6 +251,9 @@ a:active {
   text-decoration: underline;
 }
 
+a#active {
+  color: #30383d; opacity: 0.8; text-decoration: none;
+}
 
 h5.date {
   color: #aab8c2;
@@ -454,12 +480,19 @@ ul.arrows li.arrows {
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover  a.dropdown {color: #657786;}
+.dropdown:hover  a.dropdown {color: #30383d; opacity: 0.8; text-decoration: none;} 
 
 h4 {
   color: white;
   font-size: 38px;
   margin-left: 70px;
+}
+
+.social a i {
+  margin-top: 10px;
+  margin-left: 1px;
+  margin-right: 10px;
+  color: black;
 }
 
 .cardproject {
@@ -479,6 +512,23 @@ h4 {
 
 .cardproject:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+.cardprofile p {
+  margin-top: 6px;
+}
+
+.cardprofile b {
+  font-size: 1.1rem;
+  line-height: 1.1rem;
+  letter-spacing: -.035rem;
+}
+
+.social b {
+  font-size: 1.1rem;
+  line-height: 1.1rem;
+  letter-spacing: -.035rem;
 }
 
 .container {
@@ -511,7 +561,18 @@ h4 {
     padding: 0;
   }
 
+  .profilephoto {
+    margin-top: -30px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    }
+
   .leftcolumnproj {
+    padding-left: 50px;
+  }
+
+  .leftcolumnprof {
+    width: 80%;
     padding-left: 50px;
   }
 
@@ -535,6 +596,7 @@ h4 {
     padding-top: 80px;
     padding-left: 50px;
   }
+
 
   h3.categories {
     padding-left: 50px;

@@ -28,7 +28,7 @@ p.main {
 }
 
 img {
-  border-radius: 100%;
+  border-radius: 500%;
   width: 246px;
   height: 240px;
   object-fit: cover;
@@ -39,16 +39,16 @@ img {
 /* Header/Blog Title */
 .header {
   width: 100%;
-  height: 16rem;
+  height: 25rem;
   text-align: left;
-  background: #44A08D;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #093637, #44A08D);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #093637, #44A08D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #606ac3;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2ebf91, #606ac3);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2ebf91, #606ac3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   position:relative;
 }
 
 h1.headline {
-  font-size: 3em;
+  font-size: 2.8em;
   position:absolute;bottom:0;left:67px;
   color: white;
 }
@@ -250,6 +250,10 @@ a:active {
   text-decoration: underline;
 }
 
+a#active {
+  color: #30383d; opacity: 0.8; text-decoration: none;
+}
+
 .social a i {
   margin-top: 20px;
   margin-right: 20px;
@@ -306,9 +310,7 @@ a.blogtitle:hover {
 }
 
 ol.navlink li a:hover {
-  color: #657786;
-  opacity: 0.8;
-  text-decoration: none;
+  color: #30383d; opacity: 0.8; text-decoration: none;
   }
 
 a.blogtitle:active {
@@ -490,7 +492,7 @@ ul.arrows li.arrows {
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover  a.dropdown {color: #657786;}
+.dropdown:hover  a.dropdown {color: #30383d; opacity: 0.8; text-decoration: none;}
 
 h4 {
   color: white;
