@@ -3,54 +3,55 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="blog alt.css" />
+<script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
 </head>
 <body>
     
   <div class="header">
-
-    <div class="navbar">
-      <ol class="navlink">
-        <li><a href="profile-alt.html">profile</a></li>
-         <li><a id="active" href="projects-alt.html">projects</a></li>
-         <div class="dropdown">
-          <li ><a class=dropdown>blog</a></button></li>
-          <div class="dropdown-content">
-            <a href="blog-alt-personal.html">Personal</a>
-            <a href="blog-alt-work.html">Work</a>
-          </div>
+    <div id="navbar">
+      <a href="profile-alt.html">profile</a>
+       <a id="active" href="projects-alt.html">projects</a></li>
+       <div class="dropdown">
+        <a class=dropdown>blog</a>
+        <div class="dropdown-content">
+          <a href="blog-alt-personal.html">Personal</a>
+          <a href="blog-alt-work.html">Work</a>
         </div>
-         </ol>
-          </div>
+      </div>
+        </div>
+
       <h1 class=headline href="contact-alt.html">Projects</h1>
 
       </div>
-<script>
-// When the user scrolls the page, execute myFunction
-  window.onscroll = function() {myFunction()};
-  
-  // Get the navbar
-  var navbar = document.getElementById("navbar");
-  
-  // Get the offset position of the navbar
-  var sticky = navbar.offsetTop;
-  
-  // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-  function myFunction() {
-    if (window.pageYOffset >= sticky) {
-      navbar.classList.add("sticky")
-    } else {
-      navbar.classList.remove("sticky");
-    }
-  }
-  </script>
 
 </div>
-<div class="main">
-  <div class="row">
+
+<script>
+  $(function() {
+    var header = $('#navbar');
+    var heightThreshold = $(".content").offset().top;
+    var heightThreshold_end  = $(".content").offset().top +$(".content").height() ;
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= heightThreshold && scroll <=  heightThreshold_end ) {
+            header.addClass('sticky');
+        } else {
+            header.removeClass('sticky');
+        }
+    });
+})
+
+</script>
 
     <div class="leftcolumnproj">
-        </head>
-        <body>
+
+      <div class="content">
+        <div class="row">
+
+
+
+
 
         <div class="cardproject">
           <img src="assets/images/portfolio/housereno.jpg" id="card">
