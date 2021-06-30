@@ -3,12 +3,12 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="blog alt.css" />
-<script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
+<script src="assets/js/jquery.min.js"></script>
 </head>
 <body>
     
   <div class="header">
-    <div id="navbar">
+    <div class="navbar">
       <a href="profile-alt.html">profile</a>
        <a id="active" href="projects-alt.html">projects</a></li>
        <div class="dropdown">
@@ -28,7 +28,7 @@
 
 <script>
   $(function() {
-    var header = $('#navbar');
+    var header = $('.navbar');
     var heightThreshold = $(".content").offset().top;
     var heightThreshold_end  = $(".content").offset().top +$(".content").height() ;
     $(window).scroll(function() {

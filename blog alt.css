@@ -56,6 +56,86 @@ h5 {
   margin: 0;
 }
 
+/* Page content */
+.content {
+  padding-top: 80px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/* Style the navbar */
+.navbar {
+  overflow: hidden;
+  background-color: transparent;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  padding-left: 50px;
+  padding-top: 5px;
+}
+
+/* Style the navbar */
+.navbar.sticky {
+  opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: .6s;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #606ac3;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2ebf91, #606ac3);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2ebf91, #606ac3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  padding-top: 14px;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-bottom: 14px;
+  text-decoration: none;
+}
+
+/* Style the navbar */
+#navbar2 {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+#navbar2 a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
 
 /* Create two unequal columns that floats next to each other */
 /* Left column */
@@ -242,6 +322,11 @@ a {
   text-decoration: none;
   color: white
 }
+
+.navbar a:hover {
+  color: #30383d; opacity: 0.8; text-decoration: none;
+}
+
 
 a:hover {
   text-decoration: underline;
@@ -446,20 +531,20 @@ ul.arrows li.arrows {
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
-  position: relative;
   display: inline-block;
 }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
-  position: absolute;
+  position: fixed;
   background-color: #f1f1f1;
   min-width: 60px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   border-radius: 4px;
   width: 135px;
+  margin-left: 12px;
 }
 
 /* Links inside the dropdown */
@@ -552,65 +637,6 @@ h4 {
 
 .cardproject p:hover {
   color: black;
-}
-
-/* Page content */
-.content {
-  padding: 16px;
-}
-
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 60px;
-}
-
-/* Style the navbar */
-#navbar {
-  overflow: hidden;
-  background-color: #333;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-}
-
-/* Style the navbar */
-#navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-/* Navbar links */
-#navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
-}
-
-/* Style the navbar */
-#navbar2 {
-  overflow: hidden;
-  background-color: #333;
-}
-
-/* Navbar links */
-#navbar2 a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
 }
 
 
