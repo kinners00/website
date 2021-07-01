@@ -565,7 +565,7 @@ ul.arrows li.arrows {
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover  a.dropdown {color: #30383d; opacity: 0.8; text-decoration: none;} 
+.dropdown:hover  a.dropdown {opacity: 0.5; text-decoration: none;} 
 
 h4 {
   color: white;
