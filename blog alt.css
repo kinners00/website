@@ -324,7 +324,7 @@ a {
 }
 
 .navbar a:hover {
-  color: #30383d; opacity: 0.8; text-decoration: none;
+  opacity: 0.5; text-decoration: none;
 }
 
 
@@ -337,7 +337,7 @@ a:active {
 }
 
 a#active {
-  color: #30383d; opacity: 0.8; text-decoration: none;
+opacity: 0.5; text-decoration: none;
 }
 
 h5.date {
