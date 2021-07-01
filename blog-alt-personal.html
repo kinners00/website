@@ -3,35 +3,46 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="blog alt.css" />
+<script src="assets/js/jquery.min.js"></script>
 </head>
 <body>
     
   <div class="header">
-
-
     <div class="navbar">
-      <ol class="navlink">
-        <li><a href="profile-alt.html">profile</a></li>
-         <li><a href="projects-alt.html">projects</a></li>
-         <div class="dropdown">
-          <li ><a id="active" class=dropdown>blog</a></button></li>
-          <div class="dropdown-content">
-            <a href="blog-alt-personal.html">Personal</a>
-            <a href="blog-alt-work.html">Work</a>
-          </div>
+      <a href="profile-alt.html">profile</a>
+       <a href="projects-alt.html">projects</a></li>
+       <div class="dropdown">
+        <a id="active" class=dropdown>blog</a>
+        <div class="dropdown-content">
+          <a href="blog-alt-personal.html">Personal</a>
+          <a href="blog-alt-work.html">Work</a>
         </div>
-         </ol>
-          </div>
+      </div>
+        </div>
   <h1 class=headline href="profile-alt.html">Blog</h1>
 </div>
-</div>
 
+<script>
+  $(function() {
+    var header = $('.navbar');
+    var heightThreshold = $(".content").offset().top;
+    var heightThreshold_end  = $(".content").offset().top +$(".content").height() ;
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
 
-</div>
-<div class="main">
+        if (scroll >= heightThreshold && scroll <=  heightThreshold_end ) {
+            header.addClass('sticky');
+        } else {
+            header.removeClass('sticky');
+        }
+    });
+})
+</script>
+
+<div class="content">
   <div class="row">
-
     <div class="rightcolumn">
+
       <div class="cardcategory">
         <h3 class="categories">Personal</h3>
       </div>
