@@ -19,7 +19,7 @@ body {
 /* Header/Blog Title */
 .header {
   width: 100%;
-  height: 34rem;
+  height: 37rem;
   text-align: left;
   position:relative;
   background: #44A08D;  /* fallback for old browsers */
@@ -34,8 +34,19 @@ body {
 
 h1.headline {
   letter-spacing: -.025rem;
-  font-size: 2.8em;
-  position:absolute;bottom:0;left:67px;
+  font-size: 4.3em;
+  position: absolute;
+  bottom: 1em;
+  left: 67px;
+  color: white;
+}
+
+h2.subhead {
+  letter-spacing: -.025rem;
+  font-size: 1.5em;
+  position: absolute;
+  bottom: 3em;
+  left: 68px;
   color: white;
 }
 
@@ -58,7 +69,15 @@ h5 {
 
 /* Page content */
 .content {
-  padding-top: 80px;
+  padding-top: 20px;
+}
+
+.content.proj {
+  padding-top: 60px;
+}
+
+.content.prof {
+  padding-top: 90px;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -352,7 +371,7 @@ h5.date {
 
 
 h5.category {
-  margin-bottom: 10px;
+  margin-bottom: 3px;
 }
 
 h5.category a {
@@ -371,7 +390,6 @@ a.blogtitle {
   margin: 0;
   padding: 0;
   word-break: break-word;
-  padding-top: 5px;
 }
 
 h2.blogtitle {
@@ -386,7 +404,6 @@ h2.blogtitle {
   margin: 0;
   padding: 0;
   word-break: break-word;
-  padding-top: 5px;
 }
 
 
@@ -591,7 +608,7 @@ h4 {
   width: 350px;
   display: inline-grid;
   margin-bottom: 60px;
-  margin-right: 40px;
+  margin-right: 60px;
 }
 
 .cardproject img {
@@ -627,7 +644,7 @@ h4 {
 
 .cardproject p {
   text-decoration: none;
-  color: #aab8c2;
+  color: black;
   font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-size: 1.2rem;
@@ -639,12 +656,6 @@ h4 {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-
-.cardproject p:hover {
-  color: black;
-}
-
-
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
@@ -666,6 +677,11 @@ h4 {
   .leftcolumnprof {
     width: 80%;
     padding-left: 50px;
+  }
+
+  .cardproject p {
+    font-size: 1rem;
+    line-height: 1rem;
   }
 
   .cardproject img {
@@ -703,16 +719,74 @@ ol.navlink {
   padding-left: 20px;
 }
 
-h1.headline {
+h1.headline.blog {
+  font-size: 3em;
+  bottom: 1.3em;
+  left: 47px;
+}
+
+h1.headline.projects {
+  font-size: 3em;
+  bottom: 1.3em;
+  left: 47px;
+}
+
+h1.headline.profile {
+  font-size: 3em;
+  bottom: 1.3em;
+  left: 47px;
+}
+
+h2.subhead.blog {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  bottom: 2em;
   left: 48px;
 }
+
+h2.subhead.projects {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  bottom: 2em;
+  left: 48px;
+}
+
+h2.subhead.profile {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  bottom: 2em;
+  left: 48px;
+}
+
+.navbar {
+  padding-left: 33px;
+}
+
 
 .cardproject {
   width: 280px;
   margin-bottom: 60px;
-  margin-right: 20px;
+  margin-right: 60px;
 }
 
+}
+
+@media screen and (max-width: 660px) {
+  h1.headline.blog {
+    bottom: 1.7em;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  h1.headline.projects {
+    bottom: 1.8em;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  h1.headline.blog {
+    bottom: 2.2em;
+  }
 }
 
 @media (min-width: 1600px) {
