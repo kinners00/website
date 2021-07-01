@@ -327,6 +327,11 @@ a {
   opacity: 0.5; text-decoration: none;
 }
 
+.navbar a#drop:hover {
+  opacity: 1;
+}
+
+
 
 a:hover {
   text-decoration: underline;
@@ -559,7 +564,7 @@ ul.arrows li.arrows {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {background-color: #ddd;} 
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
