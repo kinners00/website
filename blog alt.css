@@ -170,6 +170,7 @@ h5 {
 
 .leftcolumn.post {   
   width: 100%;
+  padding-left: 74px;
 }
 
 .leftcolumnproj {   
@@ -233,6 +234,10 @@ img.profile {
 margin-top: 50px;
 }
 
+.card.post {
+  max-width: 88%;
+  padding-top: 80px;
+}
 
 
 .card {
