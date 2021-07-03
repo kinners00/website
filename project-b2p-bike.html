@@ -16,7 +16,7 @@ let result;
 let textLength = test.split(" ").length; // Split by words
 if(textLength > 0){
   let value = Math.ceil(textLength / wordsPerMinute);
-  result = `~${value} min read`;
+  result = `${value} min read`;
 }
 document.getElementById("readingTime").innerText = result;
 
