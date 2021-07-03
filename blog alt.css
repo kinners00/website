@@ -168,11 +168,6 @@ h5 {
   width: 25%;
 }
 
-.leftcolumn.post {   
-  width: 100%;
-  padding-left: 74px;
-}
-
 .leftcolumnproj {   
   float: left;
   width: 100%;
@@ -193,6 +188,10 @@ h5 {
   width: 50px;
 }
 
+.rightcolumn.post {
+  float: left;
+  width: 20%;
+}
 .imgportraitbloglist {
   background-color: #aaa;
   height: 300px;
@@ -235,7 +234,7 @@ margin-top: 50px;
 }
 
 .card.post {
-  max-width: 88%;
+  max-width: 700px;
   padding-top: 80px;
   padding-left: 0px;
 }
