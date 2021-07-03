@@ -786,6 +786,13 @@ h2.subhead.profile {
   margin-right: 60px;
 }
 
+.leftcolumnpost {
+  display: grid;
+  justify-content: center;
+  padding-left: 55px;
+  max-width: 88%;
+}
+
 }
 
 @media screen and (max-width: 660px) {
