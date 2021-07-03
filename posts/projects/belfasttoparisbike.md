@@ -1,6 +1,6 @@
-## Original, Untouched and a little tired
-
 ![original1](../images/original_vintage.jpg)
+
+## Original, Untouched and a little tired
 
 I bought this from a middle aged guy in East Belfast - The furthest single journey the bike had travelled was the few miles each day he regularly rode from his parents house to Queens University Belfast and home again, back in the 1970's. Funnily enough, I had never cycled more than a few miles at a time before this Belfast to Paris trip....so we were well matched!
 
