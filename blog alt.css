@@ -168,6 +168,10 @@ h5 {
   width: 25%;
 }
 
+.leftcolumn.post {   
+  width: 100%;
+}
+
 .leftcolumnproj {   
   float: left;
   width: 100%;
