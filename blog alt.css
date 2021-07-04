@@ -73,7 +73,7 @@ h5 {
 }
 
 .content.proj {
-  padding-top: 60px;
+  padding-top: 100px;
 }
 
 .content.prof {
@@ -169,8 +169,8 @@ h5 {
 }
 
 .leftcolumnproj {   
-  float: left;
-  width: 100%;
+  display: flex;
+  justify-content: center; 
   padding-left: 70px;
 }
 
@@ -245,6 +245,12 @@ margin-top: 50px;
   padding-left: 0px;
   display: grid; 
   justify-content: center;
+}
+
+.card.project {
+  /* max-width: 1580px; */
+  padding-top: 0px;
+  padding-left: 0px;
 }
 
 
@@ -625,12 +631,16 @@ h4 {
   display: inline-grid;
   margin-bottom: 60px;
   margin-right: 60px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
 
 .cardproject img {
   width: 350px;
   height: 250px;
   object-fit: cover;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
 
 .cardproject:hover {
