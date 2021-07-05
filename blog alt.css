@@ -1,5 +1,4 @@
 /* Add a gray background color with some padding */
-
 * {
   box-sizing: border-box;
 }
@@ -168,12 +167,6 @@ h5 {
   width: 25%;
 }
 
-.leftcolumnproj {   
-  display: flex;
-  justify-content: center; 
-  padding-left: 70px;
-}
-
 .leftcolumnpost {  
   display: grid;
   justify-content: center; 
@@ -254,7 +247,7 @@ margin-top: 50px;
 }
 
 
-.card {
+.titlecontainer {
   max-width: 88%;
   padding-top: 80px;
   padding-left: 74px;
@@ -690,7 +683,119 @@ h4 {
   padding-bottom: 20px;
 }
 
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  padding-left: 40px;
+  padding-top: 60px;
+  justify-content: center;
+}
+.card {
+  flex: 0 0 300px;
+  margin: 30px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  transition: 0.3s;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+} 
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%);
+}
+.card img {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.card .text {
+  padding: 10px 20px 10px;
+  text-decoration: none;
+    color: black;
+    font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    letter-spacing: -.025rem;
+}
+.card .text > button {
+  background: gray;
+  border: 0;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  }
 
+
+
+/*
+@media screen and (max-width: 900px) {
+
+  .cardproject {
+    margin-right: 0px;
+    margin-left: 67px;
+    width: 325px;
+    max-width: 88%;
+    display: inline-grid;
+}
+
+.cardproject img {
+  width: 325px;
+  height: 225px;
+  display: grid;
+}
+
+.cardproject p {
+  display: grid;
+}
+
+.leftcolumnproj {
+  display: grid;
+  justify-content: center; 
+  max-width: 88%;
+  justify-content: left;
+}
+
+}
+
+*/
+
+@media screen and (max-width: 1330px) {
+
+  .cards {
+    justify-content: left;
+  }
+    .card {
+      flex: 0 0 250px;
+      margin: 30px;
+      box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+      transition: 0.3s;
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+    } 
+    .card:hover {
+      box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%);
+    }
+    .card img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+    }
+    .card .text {
+      padding: 10px 20px 10px;
+      text-decoration: none;
+        color: black;
+        font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
+        font-weight: 500;
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+        letter-spacing: -.025rem;
+    }
+
+}
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
@@ -698,6 +803,32 @@ h4 {
     width: 100%;
     padding: 0;
   }
+
+  .cards {
+    padding-left: 20px;
+  }
+
+  .card {
+    flex: 0 0 200px;
+    margin: 30px;
+  } 
+
+  .card img{
+    width: 275px;
+    height: 170px;
+  }
+
+  .card .text {
+    padding: 10px 20px 10px;
+    text-decoration: none;
+      color: black;
+      font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
+      font-weight: 500;
+      font-size: 1.2rem;
+      line-height: 1.2rem;
+      letter-spacing: -.025rem;
+  }
+
 
   .profilephoto {
     margin-top: -30px;
@@ -735,7 +866,7 @@ h4 {
     line-height: 1.7rem;
   }
 
-  .card {
+  .titlecontainer {
     padding-top: 80px;
     padding-left: 50px;
   }
@@ -818,6 +949,11 @@ h2.subhead.profile {
   h1.headline.blog {
     bottom: 1.7em;
   }
+
+  .cards {
+    padding-left: 1em;
+  }
+
 }
 
 @media screen and (max-width: 458px) {
@@ -830,6 +966,45 @@ h2.subhead.profile {
   h1.headline.projects {
     bottom: 1.8em;
   }
+
+  .cards {
+    padding-left: .7em;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+  h1.headline.blog {
+    bottom: 2.7em;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+  h1.headline.blog {
+    bottom: 2.7em;
+  }
+
+  .card {
+    flex: 0 0 200px;
+    margin: 30px;
+  } 
+
+  .card img {
+    width: 250px;
+    height: 150px;
+  }
+  .card .text {
+    padding: 10px 20px 10px;
+    text-decoration: none;
+      color: black;
+      font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
+      font-weight: 500;
+      font-size: 1.2rem;
+      line-height: 1.2rem;
+      letter-spacing: -.025rem;
+  }
+
 }
 
 @media screen and (max-width: 317px) {
@@ -837,6 +1012,8 @@ h2.subhead.profile {
     bottom: 2.7em;
   }
 }
+
+
 
 @media (min-width: 1600px) {
   body {
