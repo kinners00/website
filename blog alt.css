@@ -68,7 +68,7 @@ h5 {
 
 /* Page content */
 .content {
-  padding-top: 20px;
+  padding-top: 100px;
 }
 
 .content.proj {
@@ -249,13 +249,11 @@ margin-top: 50px;
 
 .titlecontainer {
   max-width: 88%;
-  padding-top: 80px;
   padding-left: 74px;
 }
 
 .cardcategory {
   max-width: 100%;
-  padding-top: 80px;
 }
 
 .cardendprof {
@@ -267,7 +265,7 @@ margin-top: 50px;
 .cardend {
   margin-top: 40px;
   max-width: 850px;
-  margin-bottom: 0px;
+  margin-bottom: 80px;
   border-bottom: 1px solid #aab8c2;
 }
 
