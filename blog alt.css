@@ -627,8 +627,8 @@ h4 {
 }
 
 .cardproject img {
-  width: 350px;
-  height: 250px;
+  width: 300px;
+  height: 200px;
   object-fit: cover;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
