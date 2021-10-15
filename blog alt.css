@@ -162,8 +162,8 @@ h5 {
 }
 
 .leftcolumnpost {   
-  padding-left: 67px;
-  width: 800px;
+  padding-left: 30%;
+  padding-right: 30%;
 }
 
 /* Right column */
@@ -237,6 +237,10 @@ margin-top: 50px;
   padding-left: 0px;
   display: grid; 
   justify-content: center;
+}
+
+.cardpost {
+  max-width: 1000px;
 }
 
 .card.project {
