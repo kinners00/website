@@ -795,7 +795,7 @@ h4 {
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 831px) {
   .leftcolumn, .rightcolumn {   
     width: 100%;
     padding: 0;
@@ -938,10 +938,7 @@ h2.subhead.profile {
 }
 
 .leftcolumnpost {
-  display: grid;
-  justify-content: center;
-  padding-left: 47px;
-  max-width: 88%;
+  padding-left: 33px;
 }
 
 }
