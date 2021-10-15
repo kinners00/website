@@ -802,8 +802,8 @@ h4 {
   }
 
   .leftcolumnpost {   
-    padding-left: 67px;
-    width: 800px;
+    width: auto;
+    padding-left: 47px;
   }
 
   .cards {
@@ -935,10 +935,6 @@ h2.subhead.profile {
   width: 280px;
   margin-bottom: 60px;
   margin-right: 60px;
-}
-
-.leftcolumnpost {
-  padding-left: 33px;
 }
 
 }
