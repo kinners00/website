@@ -172,12 +172,6 @@ h5 {
   width: 25%;
 }
 
-.leftcolumnpost {  
-  display: grid;
-  justify-content: center; 
-}
-
-
 .leftcolumnprof {
   float: left;
   width: 580px;
