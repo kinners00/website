@@ -161,6 +161,11 @@ h5 {
   width: 75%;
 }
 
+.leftcolumnpost {   
+  padding-left: 67px;
+  width: 800px;
+}
+
 /* Right column */
 .rightcolumn {
   float: left;
@@ -800,6 +805,11 @@ h4 {
   .leftcolumn, .rightcolumn {   
     width: 100%;
     padding: 0;
+  }
+
+  .leftcolumnpost {   
+    padding-left: 67px;
+    width: 800px;
   }
 
   .cards {
