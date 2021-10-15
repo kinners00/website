@@ -804,6 +804,7 @@ h4 {
   .leftcolumnpost {   
     width: auto;
     padding-left: 47px;
+    padding-right: 47px;
   }
 
   .cards {
