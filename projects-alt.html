@@ -86,11 +86,14 @@
           </div>
         </div>
 
-        <script>
+         <script>
           // When the user clicks on div, open the popup
           function myFunction() {
             var popup = document.getElementById("myPopup");
             popup.classList.toggle("show");
+            setTimeout(function(){
+              popup.classList.toggle("show");
+            }, 1300); 
           }
           </script>
 
@@ -98,7 +101,7 @@
         <div class="card">
           <img src="assets/images/portfolio/belfast.jpg">
           <div class="text">
-            <a href="bfs-par-bike.html" target="_blank"><p>Belfast-to-Paris Bike</p></a> 
+            <a href="bfs-par-bike.html"><p>Belfast-to-Paris Bike</p></a> 
           </div>
         </div>
       </div>

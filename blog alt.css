@@ -41,8 +41,8 @@ body {
 /* The actual popup (appears on top) */
 .popup .popuptext {
   visibility: hidden;
-  width: 160px;
-  background-color: #555;
+  width: 120px;
+  background-color: #202427;
   color: #fff;
   text-align: center;
   border-radius: 6px;
@@ -52,6 +52,7 @@ body {
   bottom: 90%;
   left: 50%;
   margin-left: -80px;
+  font-size: 14px;
 }
 
 /* Popup arrow */
@@ -63,14 +64,20 @@ body {
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: #555 transparent transparent transparent;
+  border-color: #202427 transparent transparent transparent;
 }
 
 /* Toggle this class when clicking on the popup container (hide and show the popup) */
 .popup .show {
   visibility: visible;
   -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s
+  animation: fadeIn 1s;
+}
+
+.popup .hide {
+  visibility: hidden;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
 }
 
 /* Add animation (fade in the popup) */
