@@ -212,6 +212,7 @@ h5 {
 .leftcolumn {   
   float: left;
   width: 75%;
+  padding-left: 130px;
 }
 
 .leftcolumnpost {   
@@ -222,7 +223,6 @@ h5 {
 /* Right column */
 .rightcolumn {
   float: left;
-  width: 25%;
 }
 
 .leftcolumnprof {
