@@ -71,14 +71,8 @@ body {
 .popup .show {
   visibility: visible;
   -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s
-}
-
-/* Toggle this class when clicking on the popup container (hide and show the popup) */
-.popup .close {
-  visibility: hidden;
-  -webkit-animation: fadeOut 1s;
-  animation: fadeOut 1s
+  animation: fadeIn 1s;
+  animation-duration: 3s;
 }
 
 /* Add animation (fade in the popup) */
@@ -90,17 +84,6 @@ body {
 @keyframes fadeIn {
   from {opacity: 0;}
   to {opacity:1 ;}
-}
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeOut {
-  from {opacity: 1;}
-  to {opacity: 0;}
-}
-
-@keyframes fadeOut {
-  from {opacity: 1;}
-  to {opacity:0 ;}
 }
 
 h1.headline {
