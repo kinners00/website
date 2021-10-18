@@ -31,7 +31,6 @@
   <meta property="og:description" content="The Puppet Enterprise guide is a practical and opinionated guide on how to get up and running with PE. The aim is that, by using this guide you'll be confident enough to deploy and manage PE day-to-day and thus be equipped to tackle any automation task that comes your way.">
   <meta property="og:site_name" content="Puppet Enterprise Guide">
 <script src="assets/js/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
     
@@ -82,37 +81,19 @@
         <div class="card">
           <img src="assets/images/portfolio/house_renovation.png" id="card">
           <div class="text">
-            <a data-toggle="modal" data-target="#myModal"><p>House Renovation</p></a> 
+            <div class="popup" onclick="myFunction()"><a><p>House Renovation</p></a> 
+              <span class="popuptext" id="myPopup">Coming soon</span>
+            </div>
           </div>
         </div>
 
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="vertical-alignment-helper">
-        <div class="modal-dialog vertical-align-center">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
-
-                    </button>
-                     <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-
-                </div>
-                <div class="modal-body">...</div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-  
-<!-- Button trigger modal -->
-<!-- <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Launch demo modal</button>-->
-<!-- Modal -->
-
+        <script>
+          // When the user clicks on div, open the popup
+          function myFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+          }
+          </script>
 
 
         <div class="card">
