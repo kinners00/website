@@ -68,7 +68,7 @@ body {
 }
 
 /* Toggle this class when clicking on the popup container (hide and show the popup) */
-.popup .show:hover {
+.popup .show :hover {
   visibility: visible;
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;
