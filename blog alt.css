@@ -418,6 +418,20 @@ h2.blogtitle {
   word-break: break-word;
 }
 
+h2.projecttitle {
+  width: 88%;
+  text-decoration: none;
+  color: #14171a;
+  font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3rem;
+  letter-spacing: -.025rem;
+  margin: 0;
+  padding: 0;
+  word-break: break-word;
+  padding-bottom: 40px
+}
 
 a.blogtitle:hover {
   text-decoration: none;
