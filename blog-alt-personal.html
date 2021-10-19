@@ -52,16 +52,41 @@
       </div>
     </div>
 
+    <div class="card">
+      <img src="assets/images/portfolio/house_renovation.png" id="card">
+      <div class="text">
+        <div class="popup" onclick="myFunction()"><a><p>House Renovation</p></a> 
+          <span class="popuptext" id="myPopup">Coming soon</span>
+        </div>
+      </div>
+    </div>
+
+
+
     <div class="leftcolumn">
       <div class="titlecontainer">
         <div class="cardpost">
         <h5 class=category><a href="cat-personal.html">Personal</a></h5>
-        <h2 class="blogtitle"><a class="blogtitle" href="">The importance of living life on your own terms</a></h2>
-      <!--  <h5 class="date">*Coming soon!</h5> -->
+        <div class="popup" onclick="myFunction()"><h2 class="blogtitle"><a class="blogtitle" href="">The importance of living life on your own terms</a></h2>
+          <span class="popuptext" id="myPopup">Coming soon</span>
+        </div>
+          <!--  <h5 class="date">*Coming soon!</h5> -->
         <div class="cardend">
       </div>
     </div>
       </div>
+
+      <script>
+        // When the user clicks on div, open the popup
+        function myFunction() {
+          var popup = document.getElementById("myPopup");
+          popup.classList.toggle("show");
+          setTimeout(function(){
+            popup.classList.toggle("show");
+          }, 1300); 
+        }
+        </script>
+  
 
       <div class="footer">
       </div>
