@@ -2,93 +2,96 @@
 <html lang="en">
 <head>
   <title>Profile</title>
-<link rel="stylesheet" href="profile.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="assets/css/main.css" />
+<link rel="stylesheet" href="assets/vendor/font-awesome/css/fontawesome-all.min.css">
+<script src="assets/js/jquery.min.js"></script>
 </head>
-<script>
-   $(window).load(function(){        
-   $('#demo-modal').modal('hide');
-    }); 
-</script>
 <body>
+    
+  <div class="header">
+    <div class="navbar">
+      <a href="profile.html">profile</a>
+       <a href="projects.html">projects</a></li>
+        <a href="blog.html">blog</a></li>
+        </div>
+      </div>
 
 
-</div>
-    <div class="wrap">
-        <div class="clip-block">
-          <div class="clip-each clip-solid">
-          <div class="social-share-block">
-            <a href="https://www.linkedin.com/in/marcmckinley/" class="fa fa-linkedin"></a>
-            <a href="https://www.github.com/kinners00" class="fa fa-github"></a>
-            <span class="social-each"><strong></strong>
-            </span>
-          </div>
-          </div>  
-        </div> <!-- /clip-block  https://codepen.io/MarioDesigns/pen/woJgeo -->
-    
-        <div class="clip-block">	
-          <a href="#demo-modal" class="clip-each clip-gradient">
-            <div class="clip-caption">about me
-            
-            </div>
-            
-            <!-- https://freefrontend.com/css-modal-windows/ -->
-          </a>  
-          <a href="blog alt.html" class="clip-each clip-border">
-            <div class="clip-caption">blog</div>
-          </a>  
-        </div> <!-- /clip-block -->
-    
-        <div class="clip-block">
-          <a href="#" class="clip-tagline"></a>
-        </div> <!-- /clip-block -->
-        <svg class="clip-svg">
-          <defs>
-            <clipPath id="hexagon-clip" clipPathUnits="objectBoundingBox">
-              <polygon points="0.25 0.05, 0.75 0.05, 1 0.5, 0.75 0.95, 0.25 0.95, 0 0.5" />
-            </clipPath>
-          </defs>
-        </svg>  
-    
-        <svg class="clip-svg">
-          <defs>
-            <clipPath id="triangle-clip" clipPathUnits="objectBoundingBox">
-              <polygon points="1 0.03, 0.17 1, 1 1" />
-            </clipPath>
-          </defs>
-        </svg>  
-      </div> <!-- /wrap -->
-    
-      <div id="demo-modal" class="modal">
-        <div class="modal__content">
-            <h1>About me</h1>
-    
-            <p>
-                <b>Name:</b>  Marc McKinley              
-            </p>
-            <p>
-               <b>Location:</b> Belfast/Béal Feirste, Northern Ireland
-          </p>
-          <p>
-            <b>Job Role:</b> Sr. Sales Engineer
-       </p>
-       <p>
-        <b>Industry:</b> Tech
-   </p>
-       <p>
-        <b>Likes:</b> People / Psychology / Outdoors / Music / Tech / Design / Minimalism
-   </p>
-            
-    
-            <div class="modal__footer">
-               
-            </div>
-    
-            <a href="#" class="modal__close">&times;</a>
-        </div>	
+<h1 class="headline profile">Profile</h1>
+<h2 class="subhead profile">A brief intro to me.</h2>
 </div>
 
+
+<script>
+  $(function() {
+    var header = $('.navbar');
+    var heightThreshold = $(".content").offset().top;
+    var heightThreshold_end  = $(".content").offset().top +$(".content").height() ;
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= heightThreshold && scroll <=  heightThreshold_end ) {
+            header.addClass('sticky');
+        } else {
+            header.removeClass('sticky');
+        }
+    });
+})
+</script>
+
+
+<div class="content prof">
+  <div class="row">
+
+    <div class="leftcolumnprof">
+      <div class="profilephoto">
+        <img class=profile src="me.jpg"></img>
+      </div>
+      <div class="profilecard">
+        <div class="cardprofile">
+          <b>Name</b>  <p>Marc McKinley   </p>           
+
+         <b>Location</b> <p>Belfast, Northern Ireland</p>
+
+      <b>Job Role</b> <p>Sr. Sales Engineer</p>
+
+  <b>Industry</b> <p>Tech - Automation Software</p>
+
+  <b>Likes</b> <p>Psychology / Outdoors / Music / Design / Minimalism </p>
+
+
+<div class="social">
+  <b>Social</b>
+  <p>
+  <a href="https://www.linkedin.com/in/marcmckinley/"><i class="fab fa-linkedin"></i>
+<a href="https://www.twitter.com/kinners00"><i class="fab fa-twitter"></i>
+  <a href="https://www.github.com/kinners00"><i class="fab fa-github"></i>
+</a></p>
 </div>
-    
-  </body>
-</html>
+
+        <div class="cardendprof">
+      </div>
+
+      <div class="footer">
+      </div>
+
+    </div>
+      </div>
+
+    </div>
+
+
+
+
+
+    </div>
+
+    </div>
+  
+    </body>
+    </html>
+
+  
