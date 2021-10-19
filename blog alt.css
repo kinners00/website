@@ -49,7 +49,7 @@ body {
   padding: 8px 0;
   position: absolute;
   z-index: 1;
-  bottom: 90%;
+  bottom: 120%;
   left: 50%;
   margin-left: -80px;
   font-size: 14px;
@@ -443,7 +443,7 @@ h5.date {
 
 
 h5.category {
-  margin-bottom: 3px;
+  margin-bottom: 15px;
 }
 
 h5.category a {
