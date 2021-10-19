@@ -1,77 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>Blog</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="blog.css" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="blog alt.css" />
+<script src="assets/js/jquery.min.js"></script>
 </head>
 <body>
     
+  <div class="header">
+    <div class="navbar">
+      <a href="profile-alt.html">profile</a>
+       <a href="projects-alt.html">projects</a></li>
+        <a href="blog.html">blog</a></li>
+        </div>
+  <h1 class="headline blog" href="profile-alt.html">Blog</h1>
+  <h2 class="subhead blog">Thoughts, opinions, experiences and other mumblings.</h2>
+</div>
 
-<ol class="navlink">
-<li><b><a href="profile.html">profile</a></b></li>
-<li class="last"><b><a href="blog.html">blog</a></b></li>
-</ol> 
-  
+<script>
+  $(function() {
+    var header = $('.navbar');
+    var heightThreshold = $(".content").offset().top;
+    var heightThreshold_end  = $(".content").offset().top +$(".content").height() ;
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
 
+        if (scroll >= heightThreshold && scroll <=  heightThreshold_end ) {
+            header.addClass('sticky');
+        } else {
+            header.removeClass('sticky');
+        }
+    });
+})
+</script>
 
-  
+<div class="content">
   <div class="row">
+    <div class="rightcolumn">
+
+      <div class="cardcategory">
+        <h3 class="categories">All</h3>
+      </div>
+    </div>
+
+
+
     <div class="leftcolumn">
-      <div class="card blog-list">
-        <h2>Evolution of the Belfast to Paris Bike</h2>
-        <h5>Wednesday, December 7, 2017</h5>
-        <ol class="tags">
-          <li class="first"><h5>Tags:</h5></li>
-          <li><h5 class="button">photos</h5></li>
-          <li><h5><a href="cat-personal.html" class="button">personal</a></h5></li>
-          </ol> 
-          <div class="description">
-        <p>From a beaten up, rusty old wreck to a lean, mean, pristine machine - I walk through the evolution of the bike that would take me from Belfast to Paris.</p>
-        <b><a href="blog-post-evo.html">Read</a></b>
-      </div>
-      </div>
-      <div class="card">
-        <h2>Learnings as an SE: Part 1</h2>
-        <h5>May 15, 2021</h5>
-        <ol class="tags">
-          <li class="first"><h5>Tags:</a></h5></li>
-          <li><h5><a href="cat-work.html" class="button">work</a></h5></li>
-          </ol> 
-          <div class="description">
-        <p>Some text..</p>
-        <b><a href="blog-post-evo.html">Read</a></b>
+      <div class="titlecontainer">
+        <div class="cardpost">
+        <h5 class=category>Personal</h5>
+        <div class="popup" onclick="myFunction()"><a class="blogtitle">The importance of living life on your own terms</a>
+          <span class="popuptext" id="myPopup">Coming soon</span>
+        </div>
+          <!--  <h5 class="date">*Coming soon!</h5> -->
+        <div class="cardend">
       </div>
     </div>
-      <div class="card">
-        <h2>Belfast to Paris</h2>
-        <h5>Sep 2, 2017</h5>
-        <ol class="tags">
-          <li class="first"><h5>Tags:</h5></li>
-          <li><h5 class="button">photos</h5></li>
-          <li><h5><a href="cat-personal.html" class="button">personal</a></h5></li>
-          </ol> 
-          <div class="description">
-        <p>Some text..</p>
-        <b><a href="blog-post-evo.html">Read</a></b>
+      </div>
+
+      <script>
+        // When the user clicks on div, open the popup
+        function myFunction() {
+          var popup = document.getElementById("myPopup");
+          popup.classList.toggle("show");
+          setTimeout(function(){
+            popup.classList.toggle("show");
+          }, 1300); 
+        }
+        </script>
+  
+
+      <div class="footer">
       </div>
     </div>
-      <ul class="arrows">
-        <li class="arrows"><a href="profile.html"><span class="arrow arrow-right"></span></a></li>
-        </ul>
+
+
 
     </div>
-    <div class="rightcolumn">
-      <div class="card">
-        <h3 class="categories">Categories</h3>
-        <ul class="categories">
-        <li><b><a href="blog.html">All</a></b></li>
-        <li><b><a href="cat-personal.html">Personal</a></b></li>
-        <li><b><a href="cat-work.html">Work</a></b></li>
-      </ul>
-      </div>
+
     </div>
-  </div>
-  
     </body>
     </html>
 
