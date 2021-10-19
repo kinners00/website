@@ -55,6 +55,10 @@ body {
   font-size: 14px;
 }
 
+.popup .popuptext.proj {
+  bottom: 90%;
+}
+
 /* Popup arrow */
 .popup .popuptext::after {
   content: "";
