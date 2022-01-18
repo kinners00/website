@@ -61,6 +61,49 @@ Here it is, the considerable lump of steel held above my head at the Eiffel Towe
 ## An evolution to city life
 
 ![citywhip1](../images/bikeproj_full.jpeg)
-![citywhip2](../images/new_whip.jpg) 
 
-This is really what I wanted from the beginning but I felt like I had to symbolically revive the peugeot branding for the French trip. However now that I was back and I wanted to use this bike for cycling into the city, I was happy to start again from fresh but, I wouldn't be do the crazy hard labour on stripping the paint/respraying. I found that the rattle can finish isn't super durable and realistically, a powder coat would be the best way to go. *WIP*
+This is really what I wanted from the beginning but I felt like I had to symbolically revive the Peugeot branding for the French trip. However, now that I was back home, I wanted to use this bike for cycling into the city, so I was happy to start again from fresh...However, I wasn't going to go through the annoyingly hard labour required for stripping the paint and respraying. I also found that the rattle can finish isn't super durable and realistically, a powder coat would be the best way to go so I left it with a local powder coat sprayer and got it done professionally. £40 well spent.
+
+Many of the more expensive old steel bikes from the 70's and 80's had chrome forks which was a really nice touch and added a bit of polish and variety to fairly flat frame colors, such as white. So, I was able to source new but retro style chrome forks to fit to the frame.
+
+![citywhip2](../images/par_1.JPG)
+
+Over the next year or so, I really started to get more into the old school aesthetic and more "long lived materials" such as leather, steel, copper etc. In particular brookes saddles. These, initially rock hard saddles seem uncomfortable to ride on but after about 50-100 miles or so, the saddle literally molds to the shape on your rear end making for the ultimate comfortable custom made saddle. Brooks have been making saddles for over 150 years and in my time working in a bicycle shop, I had met a few older and some quite eldery customers who had the same saddle most of their lives and are still pedaling away on them to this day. There's virtually no products we use these days that you can fairly confidently know that you're going to be able to use through the rest of life without the need to replace it - Incredible!
+
+With that in mind, I chose a Brooks Saddle in honey brown leather with copper rails and paired it with matching bar tape.
+
+![citywhip3](../images/par_3.JPG)
+
+Apart from that, I slapped a modern road brake caliper on the front, reused the original wheel set and replaced the chainset and bottom bracket. 
+
+## A bitter sweet ending
+
+This was a really nice looking bike that rode really well and I really enjoyed the city rides I had on this one but unfortunately, the more I learnt about bike sizing (what height a person should be in relation to which size of bike they should be riding) I realised that this bike was way too small for me and was probably gonna do some long term back and knee damage. With that in mind, I called it a day and regrettably stripped the bike of its part and sold them off individually. I did keep the saddle and I reused it on another build.
+
+![citywhip4](../images/par_2.jpg)
+
+
+Whilst it was sad ending, I find refurbing and building bikes super enjoyable. There's something about seeing a project through from a heap of junk that you wouldn't give a second glance to a respectable mode of transport that you desire and want to cycle that is really satisifying.
+
+I refurbed/built and rode several bikes after then, all of which have move been sold on since then for one reason or another but you can see some of them below.
+
+
+**Carlton**
+
+![carlton1](../images/carlton_1.jpg)
+
+![carlton2](../images/carlton_2.jpg)
+
+![carlton3](../images/carlton_3.jpg)
+
+**Surly**
+
+![surly](../images/surly.jpg)
+
+**Bikerton**
+
+![bikerton1](../images/bikerton_1.jpg)
+
+![bikerton2](../images/bikerton_2.jpg)
+
+
