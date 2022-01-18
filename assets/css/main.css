@@ -457,7 +457,7 @@ h5.category a {
 a.blogtitle {
   width: 85%;
   text-decoration: none;
-  color: #657786;
+  color: orange;
   font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-size: 2.25rem;
@@ -499,7 +499,7 @@ h2.projecttitle {
 
 a.blogtitle:hover {
   text-decoration: none;
-  color: steelblue;
+  color: rgb(37, 37, 37);
   opacity: 0.9;
 }
 
