@@ -1,367 +1,97 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
-
-    <head>
-
-        <title>Marc McKinley</title>
-
-        <meta name="description" content="">
-
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-
-        <!-- Google Font: Lato -->
-        <link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-
-        <!-- FontAwesome -->
-        <link rel="stylesheet" href="assets/plugins/font-awesome/css/fontawesome.min.css">
-        <link rel="stylesheet" href="assets/plugins/font-awesome/css/brands.min.css">
-
-        <!-- Nivo Lightbox-->
-        <link rel="stylesheet" href="" />
-        <link rel="stylesheet" href="assets/plugins/nivo-lightbox/themes/default/default.css" />
-
-        <!-- Main CSS -->
-        <link rel="stylesheet" href="assets/css/main.css">
-        
-        <!-- Themes -->
-        <link rel="stylesheet" href="assets/css/themes.dark.css"> 
-        <!--<link rel="stylesheet" href="assets/css/themes.dark.css">-->
-        
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="assets/css/custom.css">
-
-        <!-- jQuery -->
-        <script src="assets/js/jquery.min.js"></script>
-
-        <!-- dense.js (Retina plugin) -->
-        <script src="assets/js/dense.js"></script>
-
-        <!-- Nivo Lightbox -->
-        <script src="assets/plugins/nivo-lightbox/nivo-lightbox.min.js"></script>
-
-        <!-- ScrollReveal -->
-        <script src="assets/js/scrollreveal.min.js"></script>
-
-        <!-- Main JS -->
-        <script src="assets/js/main.js"></script>
-
-    </head>
-
-    <body>
-
-        <div class="c-preloader  js-preloader">
-            <div class="c-preloader__spinner  t-preloader__spinner"></div>
+<head>
+  <title>Profile</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="assets/css/main.css" />
+<link rel="stylesheet" href="assets/vendor/font-awesome/css/fontawesome-all.min.css">
+<script src="assets/js/jquery.min.js"></script>
+</head>
+<body>
+    
+  <div class="header">
+    <div class="navbar">
+      <a href="index.html">profile</a>
+       <a href="projects.html">projects</a></li>
+        <a href="blog.html">blog</a></li>
         </div>
 
-        <div class="c-main-container  js-main-container">
+
+
+<h1 class="headline profile">Profile</h1>
+<h2 class="subhead profile">A brief intro to me.</h2>
+</div>
+
+
+<script>
+  $(function() {
+    var header = $('.navbar');
+    var heightThreshold = $(".content").offset().top;
+    var heightThreshold_end  = $(".content").offset().top +$(".content").height() ;
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= heightThreshold && scroll <=  heightThreshold_end ) {
+            header.addClass('sticky');
+        } else {
+            header.removeClass('sticky');
+        }
+    });
+})
+</script>
+
+
+<div class="content prof">
+  <div class="row">
+
+    <div class="leftcolumnprof">
+      <div class="profilephoto">
+        <img class=profile src="me.jpg"></img>
+      </div>
+      <div class="profilecard">
+        <div class="cardprofile">
+          <b>Name</b>  <p>Marc McKinley   </p>           
+
+         <b>Location</b> <p>Belfast, Northern Ireland</p>
+
+      <b>Job Role</b> <p>Sr. Sales Engineer</p>
+
+  <b>Industry</b> <p>Tech - Automation Software</p>
+
+  <b>Likes</b> <p>Psychology / Outdoors / Music / Design / Minimalism </p>
+
+
+<div class="social">
+  <b>Social</b>
+  <p>
+  <a href="https://www.linkedin.com/in/marcmckinley/"><i class="fab fa-linkedin"></i>
+<a href="https://www.twitter.com/kinners00"><i class="fab fa-twitter"></i>
+  <a href="https://www.github.com/kinners00"><i class="fab fa-github"></i>
+</a></p>
+</div>
+
+        <div class="cardendprof">
+      </div>
+
+      <div class="footer">
+      </div>
+
+    </div>
+      </div>
+
+    </div>
 
 
 
-            <!-- ################################ -->
-            <!-- ############ HEADER ############ -->
-            <!-- ################################ -->
-            
-            <section class="o-section o-section--header  t-section  t-section--header">
-                <div class="c-header">
-
-                    <div class="o-section__header-bg  t-section__header"></div>
-                    <div class="o-section__content-bg  t-section__content"></div>
-
-                    <div class="o-container">
-                        <div class="o-section__container">
-
-                            <header class="o-section__header  c-header__header  t-section__header">
-                                <div class="c-header__inner-header">
-
-                                    <div class="c-header__avatar">
-                                        <div class="a-header  c-avatar">
-                                        </div><!-- /c-avatar -->
-                                    </div><!-- /c-header-avatar -->
-
-                                </div><!-- /c-header__inner-header -->
-                            </header><!-- /o-section__header -->
-
-                            <div class="o-section__content  c-header__content  t-section__content">
-                                <div class="c-header__inner-content">
-
-                                    <div class="c-header__top">
-
-                                        <div class="c-header__brand">
-
-                                            <div class="c-brand">
-                                                <h1 class="c-brand__title  t-title">
-                                                    <span class="c-brand__sizer">
-                                                        <span class="a-header  c-brand__first-word  t-title__first-word">
-                                                            Marc
-                                                        </span>
-                                                        <span class="a-header  c-brand__second-word  t-title__second-word">
-                                                            McKinley
-                                                        </span>
-                                                    </span>
-                                                </h1>
-                                                <h2 class="a-header  c-brand__sub-title  t-sub-title">
-                                                    <span class="c-brand__sizer">
-                                                        Solutions Engineer <a>|</a> General tinkerer
-                                                    </span>
-                                                </h2>
-                                            </div><!-- /c-brand -->
-
-                                        </div><!-- /c-header__brand -->
-
-                                        <ul class="c-header__social-buttons  c-social-buttons">
-                                            <li class="a-header">
-                                                <a href="https://github.com/kinners00" target="_blank" class="c-social-button  t-social-button">
-                                                    <i class="fab  fa-lg  fa-github"></i>
-                                                </a>
-                                            </li>
-                                            <li class="a-header">
-                                                <a href="https://www.linkedin.com/in/marcmckinley/" target="_blank" class="c-social-button  t-social-button">
-                                                    <i class="fab  fa-lg  fa-linkedin"></i>
-                                                </a>
-                                            </li>
-                                            <li class="a-header">
-                                                <a href="https://twitter.com/kinners00" target="_blank" class="c-social-button  t-social-button">
-                                                    <i class="fab  fa-lg  fa-twitter"></i>
-                                                </a>
-                                            </li>
-                                        </ul><!-- /c-header__social-buttons -->
-
-                                    </div><!-- /c-header__top -->
-
-                                    <div class="c-header__contact">
-
-                                        <hr class="a-header  c-header__contact-divider" />
-
-                                        <div class="o-grid">
-
-                                            <div class="o-grid__col-md-3  o-grid__col-sm-6">
-                                                <div class="a-header  o-content">
-                                                    <div class="o-content__body">
-                                                        <h4>Location</h4>
-                                                        <address>
-                                                            Belfast, <br />
-                                                            Northern Ireland
-                                                        </address>
-                                                    </div>
-                                                </div><!-- /o-content -->
-                                            </div><!-- /o-grid__col -->
-
-                                            <div class="o-grid__col-md-3  o-grid__col-sm-6">
-                                                <div class="a-header  o-content">
-                                                    <div class="o-content__body">
-                                                    </div>
-                                                </div><!-- /o-content -->
-                                            </div><!-- /o-grid__col -->
-
-                                            <div class="o-grid__col-md-3  o-grid__col-sm-6">
-                                                <div class="a-header  o-content">
-                                                    <div class="o-content__body">
-                                                        <a href="#" target="_blank" class="t-link-container">
-                                                            <h4></h4>
-                                                            <p>
-                                                                <span class="t-link-container__item--blended">
-                                                                    
-                                                                </span>
-                                                            </p>
-                                                        </a><!-- /o-link-container -->
-                                                    </div>
-                                                </div><!-- /o-content -->
-                                            </div><!-- /o-grid__col -->
-
-                                            <div class="o-grid__col-md-3  o-grid__col-sm-6">
-                                                <div class="a-header  o-content">
-                                                    <div class="o-content__body">
-                                                        <a href="#" target="_blank" class="t-link-container">
-                                                            <h4></h4>
-                                                            <p>
-                                                                <span class="t-link-container__item--blended">
-                                                                    
-                                                                </span>
-                                                            </p>
-                                                        </a><!-- /o-link-container -->
-                                                    </div>
-                                                </div><!-- /o-content -->
-                                            </div><!-- /o-grid__col -->
-
-                                        </div><!-- /o-grid -->
-                                    </div><!-- /c-header__contact -->
-
-                                </div><!-- /c-header__inner-content -->
-                            </div><!-- /o-section__content -->
-
-                        </div><!-- /o-section__container -->
-
-                    </div><!-- /o-container -->
-
-                </div><!-- /c-header -->
-            </section><!-- /o-section -->
 
 
+    </div>
 
-            <!-- ################################ -->
-            <!-- ############ INTRO ############# -->
-            <!-- ################################ -->
-            
-            <section class="o-section  t-section  ">
+    </div>
+  
+    </body>
+    </html>
 
-                <div class="o-section__header-bg  t-section__header"></div>
-                <div class="o-section__content-bg  t-section__content"></div>
-
-                <div class="o-container">
-                    <div class="o-section__container">
-
-                        <header class="o-section__header  t-section__header">
-                            <div class="o-content">
-                                <h2 class="o-section__heading">
-                                    Intro
-                                </h2>
-                                <div class="o-content__body  o-section__description">
-                                    What I am all about.
-                                </div>
-                            </div>
-                        </header><!-- /o-section__header -->
-
-                        <div class="o-section__content  t-section__content  ">
-                            
-                            <div class="o-content">
-                                <div class="c-intro">
-                                    <div class="o-content__body">
-                                        <p>
-                                            I'm Marc - I like design, technology, outdoors and interacting with different types of folks.
-                                        </p>
-                                        <p>
-                                            Bribe me with good food/wine/coffee/beer.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div><!-- /o-section__content -->
-
-                    </div><!-- /o-section__container -->
-                </div><!-- /o-container -->
-
-            </section><!-- /o-section -->
-
-
-            <!-- ################################ -->
-            <!-- ########## EXPERIENCE ########## -->
-            <!-- ################################ -->
-            
-           
-
-            <!-- ################################ -->
-            <!-- ########### PORTFOLIO ########## -->
-            <!-- ################################ -->
-            
-            <section class="o-section  t-section  ">
-
-                <div class="o-section__header-bg  t-section__header"></div>
-                <div class="o-section__content-bg  t-section__content"></div>
-
-                <div class="o-container">
-                    <div class="o-section__container">
-
-                        <header class="o-section__header  t-section__header">
-                            <div class="o-content">
-                                <h2 class="o-section__heading">
-                                    Projects/midly interesting things
-                                </h2>
-                                <div class="o-content__body  o-section__description">
-                                    Usually house, design or tech related
-                                </div>
-                            </div>
-                        </header><!-- /o-section__header -->
-
-                        <div class="o-section__content  t-section__content  o-section__full-bottom-space">
-                            
-                            <div class="o-grid  o-grid--gallery">
-
-                                <div class="o-grid__col-sm-6">
-                                    <a class="c-image-overlay  t-image-overlay  js-lightbox" href="../posts/b2p.html" data-lightbox-hidpi="" title="Belfast to Paris" data-lightbox-gallery="Projects">
-                                        <picture>
-                                            <source srcset="assets/images/portfolio/bike_thumb.webp", type="image/webp">
-                                            <img src="assets/images/portfolio/bike_thumb.jpg">
-                                         </picture>
-
-
-                                        <div class="c-image-overlay__content">
-                                            
-                                            <h3>
-                                                Belfast to Paris
-                                            </h3>
-                                            <hr class="c-image-overlay__deco-line  t-image-overlay__deco-line" />
-                                            <p>
-                                                I bought an old steel bike, stripped it, fitted it with some new parts and cycled it (singlespeed) from Belfast to Paris in 5 days.
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-sm-6">
-                                        <a class="c-image-overlay  t-image-overlay  js-lightbox" href="../posts/b2pevo.html" data-lightbox-hidpi="" title="The Evolution of the BFS-PAR Bike" data-lightbox-gallery="portfolio">
-                                            <picture>
-                                                <source srcset="assets/images/portfolio/bikeproj_thumb.webp", type="image/webp">
-                                                <img src="assets/images/portfolio/bikeproj_thumb.jpg">
-                                             </picture>
-                                            <div class="c-image-overlay__content">
-                                                <h3>
-                                                    The Evolution of the BFS-PAR Bike
-                                                </h3>
-                                                <hr class="c-image-overlay__deco-line  t-image-overlay__deco-line" />
-                                                <p>
-                                                    How one banged up Peugeot steel frame bike went from a rusting unused heap of a junk to a transport tool that would take me through Ireland and deep across the north of France.
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-sm-6">
-                                    <a class="c-image-overlay  t-image-overlay  js-lightbox" href="../posts/house.html" data-lightbox-hidpi="" title="House Renovation" data-lightbox-gallery="portfolio">
-                                        <picture>
-                                        <source srcset="assets/images/portfolio/house_thumb.webp", type="image/webp">
-                                            <img src="assets/images/portfolio/house_thumb.jpg">
-                                        </picture>
-                                        <div class="c-image-overlay__content">
-                                            <h3>
-                                                House Renovation
-                                            </h3>
-                                            <hr class="c-image-overlay__deco-line  t-image-overlay__deco-line" />
-                                            <p>
-                                                First time home I've bought with my partner. 1930's Mid Terraced fixer upper - Needs updating but it's solid. Hopefully going to bring it back to it's former glory. Work in progress, more info soon!
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-sm-6">
-                                        <a class="c-image-overlay  t-image-overlay  js-lightbox" href="../posts/coffee.html" data-lightbox-hidpi="" title="Coffees I've made" data-lightbox-gallery="portfolio">
-                                            <picture>
-                                            <source srcset="assets/images/portfolio/coffee_thumb.webp", type="image/webp">
-                                                <img src="assets/images/portfolio/coffee_thumb.jpg">
-                                            </picture>
-                                            <div class="c-image-overlay__content">
-                                                <h3>
-                                                    Coffee Corner
-                                                </h3>
-                                                <hr class="c-image-overlay__deco-line  t-image-overlay__deco-line" />
-                                                <p>
-                                                    All things coffee related - Cool coffee spots, coffee gear, coffee events....coffee 
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </div><!-- /o-grid__col -->
-
-
-
-                            </div><!-- /o-grid -->
-
-                        </div><!-- /o-section__content -->
-
-                    </div><!-- /o-section__container -->
-                </div><!-- /o-container -->
-
-            </section><!-- /o-section -->
+  
