@@ -1009,6 +1009,38 @@ h2.subhead.profile {
   margin-right: 60px;
 }
 
+/* Icons */
+.fas,
+.far,
+.fal,
+.fab {
+  color: #575859;
+}
+
+/* Social Buttons */
+.t-social-button {
+  background: #3f4040;
+  border-color: #3f4040;
+}
+
+.t-social-button .fas,
+.t-social-button .far,
+.t-social-button .fal,
+.t-social-button .fab {
+  color: #717273;
+}
+
+.t-social-button:hover {
+  background: #323333;
+}
+
+.t-social-button:hover .fas,
+.t-social-button:hover .far,
+.t-social-button:hover .fal,
+.t-social-button:hover .fab {
+  color: #e0a80d;
+}
+
 }
 
 @media screen and (max-width: 660px) {
