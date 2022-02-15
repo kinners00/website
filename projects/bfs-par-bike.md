@@ -48,7 +48,7 @@ In total, the result shown below consisted of:
 
 ![dundalk](../assets/images/projects/dundalk.jpg)
 
-It was built! **15 hours** before me and my mate set off for Paris...... 
+It was built! **15 hours** before my friend and I set off for Paris...... 
 
 Why on earth did I leave it so late?
 
