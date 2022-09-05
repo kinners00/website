@@ -22,7 +22,7 @@ let result;
 let textLength = test.split(" ").length; // Split by words
 if(textLength > 0){
   let value = Math.ceil(textLength / wordsPerMinute);
-  result = `~${value} min read`;
+  result = `${value} min read`;
 }
 document.getElementById("readingTime").innerText = result;
 
@@ -59,6 +59,7 @@ document.getElementById("readingTime").innerText = result;
         <div class="cardpost">
         <h5 class=category>Projects</h5>
         <h2 class="projecttitle">Belfast-to-Paris Bike</h2>
+          <h5 class="date">Monday, September 5, 2022</h5>
           <p><span id="readingTime"></span></p>
           <zero-md src="bfs-par-bike.md">
           </zero-md>
