@@ -11,6 +11,23 @@
   <script src="../assets/js/gtag.js"></script>
   <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>
+  var test;
+  $.get('https://raw.githubusercontent.com/kinners00/website/feature_reading_time/projects/bfs-par-bike.md', function (response) {
+      test = response;
+
+const wordsPerMinute = 200; // Average case.
+let result;
+
+let textLength = test.split(" ").length; // Split by words
+if(textLength > 0){
+  let value = Math.ceil(textLength / wordsPerMinute);
+  result = `${value} min read`;
+}
+document.getElementById("readingTime").innerText = result;
+
+    });
+    </script>
 
   <!-- CSS -->
   <link rel="stylesheet" href="../assets/css/main.css">
@@ -42,6 +59,8 @@
         <div class="cardpost">
         <h5 class=category>Projects</h5>
         <h2 class="projecttitle">Belfast-to-Paris Bike</h2>
+          <h5 class="date">Monday, September 5, 2022</h5>
+          <h5 class="date"><span id="readingTime"></span></h5>
           <zero-md src="bfs-par-bike.md">
           </zero-md>
 
